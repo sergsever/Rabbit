@@ -1,0 +1,23 @@
+﻿@model RabbitModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	string message = @Model.Message ?? "is not received";
+}
+
+<div>
+ <h5>Message: @message</h5>
+</div>
+
+<form asp-controller="Rabbit" asp-action="Send" method="post">
+<div class="row">
+<label>message:</label>	
+<input type="text" name="message" />
+<div class="row">
+<input type="submit" value="send" />
+</div>
+</div>
+</form>
+
+
