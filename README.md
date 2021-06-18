@@ -1,0 +1,2 @@
+# Rabbit
+C# rabbitmq traning
